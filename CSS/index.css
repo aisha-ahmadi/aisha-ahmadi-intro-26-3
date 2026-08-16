@@ -1,0 +1,110 @@
+body {
+    background-color:#EADBDD;
+    color: rgb(96, 7, 96);
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #F5E6E8;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #F5E6E8;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color:maroon
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color:rgb(106, 26, 130)
+}
+#About {
+    text-align: center;
+    margin: 50px 75px 10px;;
+}
+
+#Experience {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#Experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*#Experience ul li {
+    background-color: #e9bac0;
+    padding: 10px;
+    margin: 10px 150px 10px;
+}
+*/
+#Experience li {
+  display: flex;                  
+  flex-wrap: wrap;               
+  justify-content: space-between; 
+  margin-bottom: 20px;   
+  background-color: #e9bac0;
+  font-weight: 800;
+}
+
+#Experience li p {
+  width: 100%;                    
+  margin-top: 5px; 
+  text-align: left;
+  font-size: 17px;              
+}
+
+#Experience li span:first-of-type {
+  font-weight: bold;
+}
+
+#Experience li span:nth-of-type(2) {
+  font-weight: normal;
+}
+
+#Experience li p {
+  font-weight: normal;
+}
+
+/*#Connect .connectLinks {
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+    gap: 15px;
+}*/
+
+#Connect ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+#Connect .connectLinks a {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
