@@ -7,7 +7,7 @@ body.appendChild(footer);
 const today = new Date();
 
 //Get the current year
-const thisYear = today.getFullYear(); 
+const thisYear = today.getFullYear();
 
 //Select the body element from the DOM and assign it to a variable called body
 const body = document.querySelector("body");
@@ -20,7 +20,7 @@ document.body.appendChild(footerElement);
 
 //Use the DOM Selection (querySelector) to find the footer element on the live page
 //and assign it to a variable called footer.
-const footer = document.querySelector("footer");  
+const footer = document.querySelector("footer");
 
 //create the copyright text and append it to the footer
 const copyright = document.createElement("p");
@@ -30,14 +30,61 @@ copyright.innerHTML = `&copy; ${thisYear} Aisha Ahmadi. All rights reserved.`;
 footer.appendChild(copyright);
 
 //Skills Section
-const skills = ["HTML", "CSS", "Javascript", "Git", "GitHub", "Python", "SQL", "Statistical programming", "Data Analysis", "Data Visualization", "Machine Learning", "Agile Methodologies", "Project Management", "Communication Skills"];
+const skills = [
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Git",
+  "GitHub",
+  "Python",
+  "SQL",
+  "Statistical programming",
+  "Data Analysis",
+  "Data Visualization",
+  "Machine Learning",
+  "Agile Methodologies",
+  "Project Management",
+  "Communication Skills",
+];
 
 const skillsSection = document.getElementById("Skills");
 
 const skillsList = skillsSection.querySelector("ul");
 
 for (let i = 0; i < skills.length; i++) {
-    const skill = document.createElement("li");
-    skill.innerText = skills[i];
-    skillsList.appendChild(skill); 
+  const skill = document.createElement("li");
+  skill.innerText = skills[i];
+  skillsList.appendChild(skill);
 }
+
+const messageForm = document.forms["leave_message"];
+
+messageForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = event.target.usersName.value;
+  const email = event.target.usersEmail.value;
+  const message = event.target.usersMessage.value;
+
+  console.log(name, email, message);
+
+  event.target.reset();
+
+  const messageSection = document.getElementById("messages");
+  const messageList = messageSection.querySelector("ul");
+  const newMessage = document.createElement("li");
+
+  newMessage.innerHTML = `<a href="mailto:${email}">${name}</a> <span> wrote: ${message}</span>`;
+
+  const removeButton = document.createElement("button");
+  removeButton.innerText = "Remove";
+  removeButton.type = "button";
+
+  removeButton.addEventListener("click", function () {
+    const entry = removeButton.parentNode;
+    entry.remove();
+  });
+
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
+});
