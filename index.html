@@ -10,7 +10,7 @@
     />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
@@ -27,6 +27,7 @@
         <li><a href="#Skills">Skills</a></li>
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Connect">Connect</a></li>
+        <li><a href="#leave_message">Leave a Message</a></li>
       </ul>
     </nav>
     <h1>Aisha Ahmadi</h1>
@@ -45,11 +46,13 @@
         <li>
           <span>Research Assistant</span>
           <span>August 2022 - May 2023</span>
-          <p>Conducted research and built prototypes for machine learning models.</p>
+          <p>
+            Conducted research and built prototypes for machine learning models.
+          </p>
         </li>
         <li>
           <span>Case Manager</span>
-          <span>August 2020 - August 2023</span> 
+          <span>August 2020 - August 2023</span>
           <p>Managed cases and coordinated with various stakeholders.</p>
         </li>
       </ul>
@@ -67,17 +70,47 @@
 
     <section id="Connect">
       <h2>Connect</h2>
-      <div class = "connectLinks">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/aishaahmadi/" target="_blank"
-            >LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/aisha-ahmadi" target="_blank">GitHub </a>
-        </li>
-      </ul>
+      <div class="connectLinks">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/aishaahmadi/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/aisha-ahmadi" target="_blank"
+              >GitHub
+            </a>
+          </li>
+        </ul>
       </div>
+    </section>
+
+    <section id="leave_message">
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <label for="usersName">Name:</label>
+        <br />
+        <input type="text" name="usersName" required="true" />
+        <br />
+
+        <label for="usersEmail">Email:</label>
+        <br />
+        <input type="email" name="usersEmail" required="true" />
+        <br />
+
+        <label for="usersMessage">Message:</label>
+        <br />
+        <textarea name="usersMessage" required></textarea>
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
     </section>
     <script src="js/index.js"></script>
   </body>
