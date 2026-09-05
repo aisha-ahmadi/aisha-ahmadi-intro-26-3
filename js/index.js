@@ -89,3 +89,29 @@ messageForm.addEventListener("submit", function (event) {
 
   event.target.reset();
 });
+
+fetch("https://api.github.com/users/aisha-ahmadi/repos")
+  .then(response => response.json()) 
+  .then(repositories => {
+    console.log(repositories);
+
+    const projectSection = document.getElementById('Projects');
+    
+    const projectList = projectSection.querySelector('ul');
+
+    for (let i = 0; i < repositories.length; i++) {
+
+      const project = document.createElement('li');
+      
+      project.innerText = repositories[i].name;
+      
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error('Something went wrong fetching the Projects:', error);
+    const projectSection = document.getElementById('Projects');
+    if (projectSection) {
+      projectSection.insertAdjacentHTML('beforeend', '<p>Unable to load projects at this time.</p>');
+    }
+  });
