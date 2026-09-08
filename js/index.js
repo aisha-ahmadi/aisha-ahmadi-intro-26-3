@@ -1,8 +1,3 @@
-/*const body = document.querySelector("body");
-const footer = document.createElement("footer");
-body.appendChild(footer);
-*/
-
 //Get the current date
 const today = new Date();
 

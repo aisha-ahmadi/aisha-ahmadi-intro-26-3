@@ -220,4 +220,5 @@ form[name="leave_message"] button {
 @media (min-width: 900px) {
   #Projects ul {
     grid-template-columns: repeat(3, 1fr); 
+} 
 }
