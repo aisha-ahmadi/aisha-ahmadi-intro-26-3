@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="portfolio-link">
+                <li><a href="../index.html">← Return to Portfolio</a></li>
+            </ul>
+            
+            <!-- CONTENT: Navigation endpoints to trigger 2 separate GET requests -->
+            <div class="nav-links">
+                <button id="view-photos" class="nav-btn active">Cat Photos</button>
+                <button id="view-breeds" class="nav-btn">Visual Breed Directory</button>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Content Container -->
+  <main class="maincontent">
+    <h1 id="page-title">Our Feline Friends</h1>
+    <p id="page-subtitle">A Gallery of Our Furry Feline Friends.</p>
+    
+    <!-- Dynamic Content Area -->
+    <div id="content-grid" class="imgrid">
+      <!-- JavaScript will inject cards here -->
+    </div>
+  </main>
+    <script src="api.js"></script> 
+</body>
+</html>
