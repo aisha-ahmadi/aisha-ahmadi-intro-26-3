@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #fcfbfa; /* Alabaster Off-White */
-  color: #1c1917;           /* Stone Charcoal Text */
+  background-color: #fcfbfa; 
+  color: #1c1917;           
 }
 
 /* 2. Navigation Bar Layout */
@@ -25,7 +25,7 @@ body {
 }
 .portfolio-link a {
   text-decoration: none;
-  color: #c2410c; /* Terracotta Amber Accent Link */
+  color: #7f1d1d; 
   font-weight: bold;
 }
 
@@ -43,15 +43,15 @@ body {
   border-radius: 4px;
 }
 
-/* Active endpoint toggle */
+
 .nav-btn.active {
-  background-color: #1c1917; /* Stone Charcoal Button Background */
+  background-color: #1c1917; 
   color: #ffffff;
   border-color: #1c1917;
   font-weight: bold;
 }
 
-/* 3. Card Elements & Content Spacing */
+
 .maincontent {
   max-width: 1200px;
   margin: 0 auto;
@@ -96,7 +96,7 @@ body {
 .cat-desc {
   margin: 0;
   font-size: 13px;
-  color: #78716c; /* Warm Taupe Description Text */
+  color: #78716c; 
   line-height: 1.4;
 }
 

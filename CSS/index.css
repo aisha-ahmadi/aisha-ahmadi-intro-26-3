@@ -1,6 +1,6 @@
-body {
-  background-color: #eadbdd;
-  color: rgb(96, 7, 96);
+cssbody {
+  background-color: #fbfaf8; 
+  color: #2d2a29;           
   font-family: "Playfair Display", serif;
   font-weight: 300;
   font-size: 1.2em;
@@ -9,10 +9,11 @@ body {
 nav {
   position: sticky;
   top: 0;
-  background-color: #f5e6e8;
-  padding: 10px;
+  background-color: #ffffff; /
+  padding: 15px;
   text-align: center;
   z-index: 1000;
+  border-bottom: 1px solid #e7e5e4; 
 }
 
 nav ul {
@@ -21,34 +22,54 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #57534e; 
+  font-weight: 600;
+  font-size: 0.9em;
+  font-family: sans-serif; 
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #7f1d1d; 
 }
 
 h1 {
-  background-color: #f5e6e8;
+  background-color: #f5f4f0; 
   font-size: 3em;
   font-weight: 700;
   text-align: center;
   margin-top: 50px;
-  padding: 20px;
+  padding: 30px 20px;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: maroon;
+  color: #7f1d1d; 
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 h2 {
   font-size: 2em;
   margin-bottom: 20px;
   font-weight: 600;
-  color: rgb(106, 26, 130);
+  color: #7f1d1d; 
 }
+
 section {
   scroll-margin-top: 70px;
+  max-width: 900px; 
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 #About {
   text-align: center;
-  margin: 50px 75px 10px;
+  margin: 50px auto 10px;
+  max-width: 700px;
 }
 
 #Experience {
@@ -61,79 +82,91 @@ section {
   padding: 0;
 }
 
-/*#Experience ul li {
-    background-color: #e9bac0;
-    padding: 10px;
-    margin: 10px 150px 10px;
-}
-*/
 #Experience li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
-  background-color: #e9bac0;
+  background-color: #ffffff; 
+  border: 1px solid #e7e5e4; 
+  border-radius: 6px;
+  padding: 20px;
   font-weight: 800;
 }
 
 #Experience li p {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: left;
   font-size: 17px;
+  color: #57534e; 
 }
 
 #Experience li span:first-of-type {
   font-weight: bold;
+  color: #1c1917;
 }
 
 #Experience li span:nth-of-type(2) {
   font-weight: normal;
+  color: #78716c;
 }
 
 #Experience li p {
   font-weight: normal;
 }
 
-/*#Connect .connectLinks {
-    display: flex;
-    justify-content: left;
-    margin-top: 15px;
-    gap: 15px;
-}*/
-
 #Connect ul {
   display: flex;
+  justify-content: center; 
   list-style-type: none;
   padding: 0;
+  gap: 15px;
 }
+
 #Connect .connectLinks a {
-  background-color: #333;
+  background-color: #7f1d1d; 
   color: white;
-  border-radius: 5px;
+  border-radius: 4px;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 24px;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+#Connect .connectLinks a:hover {
+  background-color: #991b1b; 
 }
 
 #Skills ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   list-style-type: none;
-  padding: 10px;
-  gap: 10px;
+  padding: 10px 0;
+  gap: 12px;
 }
 
 #Skills li {
-  background-color: #e9bac0;
-  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 6px;
+  padding: 14px;
   text-align: center;
   font-weight: bold;
+  color: #44403c;
+  font-family: sans-serif;
+  font-size: 0.9em;
 }
 
 form[name="leave_message"] {
   max-width: 500px;
   margin: 20px auto;
-  padding: 15px;
+  padding: 24px;
+  background-color: #ffffff; 
+  border: 1px solid #e7e5e4;
+  border-radius: 6px;
   font-family: sans-serif;
 }
 
@@ -143,10 +176,11 @@ section h2 {
 
 form[name="leave_message"] label {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 5px;
+  color: #44403c;
 }
 
 form[name="leave_message"] input,
@@ -154,9 +188,17 @@ form[name="leave_message"] textarea {
   width: 100%;
   padding: 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #d6d3d1;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: #fcfbfa;
+}
+
+
+form[name="leave_message"] input:focus,
+form[name="leave_message"] textarea:focus {
+  outline: none;
+  border-color: #7f1d1d;
 }
 
 form[name="leave_message"] button {
@@ -164,12 +206,17 @@ form[name="leave_message"] button {
   padding: 15px;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: #3d4247;
+  background-color: #7f1d1d; 
   color: white;
   border: none;
   border-radius: 4px;
   margin-top: 20px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form[name="leave_message"] button:hover {
+  background-color: #991b1b;
 }
 
 @media (max-width: 600px) {
@@ -182,34 +229,29 @@ form[name="leave_message"] button {
   list-style-type: none;       
   padding: 0;                  
   margin: 2rem 0;              
-  
   display: grid;               
   grid-template-columns: 1fr;  
   gap: 20px;                   
 }
 
 #Projects li {
-  background-color: #e9bac0;
-  color: rgb(106, 26, 130);
+  background-color: #ffffff; 
+  color: #1c1917;
   padding: 1.5rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e7e5e4;
   border-radius: 8px;
   font-weight: 600;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
-
 
 #Projects li:hover {
   transform: translateY(-4px);          
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 10px 20px rgba(127, 29, 29, 0.06); 
   background-color: #ffffff;             
   cursor: pointer;
 }
-
 
 @media (min-width: 600px) {
   #Projects ul {
@@ -220,5 +262,5 @@ form[name="leave_message"] button {
 @media (min-width: 900px) {
   #Projects ul {
     grid-template-columns: repeat(3, 1fr); 
-} 
+  }
 }
