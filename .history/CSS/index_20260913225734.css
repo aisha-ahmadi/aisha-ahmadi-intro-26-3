@@ -1,6 +1,6 @@
 cssbody {
-  background-color: #fbfaf8; 
-  color: #2d2a29;           
+  background-color: #fbfaf8; /* Professional warm white neutral background */
+  color: #2d2a29;           /* Rich, readable dark charcoal instead of harsh black */
   font-family: "Playfair Display", serif;
   font-weight: 300;
   font-size: 1.2em;
@@ -9,11 +9,11 @@ cssbody {
 nav {
   position: sticky;
   top: 0;
-  background-color: #ffffff; /
+  background-color: #ffffff; /* Clean white for navbar distinction */
   padding: 15px;
   text-align: center;
   z-index: 1000;
-  border-bottom: 1px solid #e7e5e4; 
+  border-bottom: 1px solid #e7e5e4; /* Subtle bottom border separator */
 }
 
 nav ul {
@@ -25,29 +25,29 @@ nav ul {
   gap: 24px;
 }
 
-
+/* Styled your nav links to inherit the cohesive color theme */
 nav a {
   text-decoration: none;
-  color: #57534e; 
+  color: #57534e; /* Soft neutral taupe */
   font-weight: 600;
   font-size: 0.9em;
-  font-family: sans-serif; 
+  font-family: sans-serif; /* Clean sans-serif font for utility elements */
   transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #7f1d1d; 
+  color: #7f1d1d; /* Elegant Maroon accent color on link hover */
 }
 
 h1 {
-  background-color: #f5f4f0; 
+  background-color: #f5f4f0; /* Soft sand gray box accent for the banner */
   font-size: 3em;
   font-weight: 700;
   text-align: center;
   margin-top: 50px;
   padding: 30px 20px;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #7f1d1d; 
+  color: #7f1d1d; /* Deep professional Maroon accent */
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -56,12 +56,12 @@ h2 {
   font-size: 2em;
   margin-bottom: 20px;
   font-weight: 600;
-  color: #7f1d1d; 
+  color: #7f1d1d; /* Unified section titles to match your Maroon theme */
 }
 
 section {
   scroll-margin-top: 70px;
-  max-width: 900px; 
+  max-width: 900px; /* Constrains section width for a clean look */
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -87,8 +87,8 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
-  background-color: #ffffff; 
-  border: 1px solid #e7e5e4; 
+  background-color: #ffffff; /* Clean white card surfaces */
+  border: 1px solid #e7e5e4; /* Soft neutral border */
   border-radius: 6px;
   padding: 20px;
   font-weight: 800;
@@ -99,7 +99,7 @@ section {
   margin-top: 8px;
   text-align: left;
   font-size: 17px;
-  color: #57534e; 
+  color: #57534e; /* Readable grey-brown text description */
 }
 
 #Experience li span:first-of-type {
@@ -118,14 +118,14 @@ section {
 
 #Connect ul {
   display: flex;
-  justify-content: center; 
+  justify-content: center; /* Centered your connect options */
   list-style-type: none;
   padding: 0;
   gap: 15px;
 }
 
 #Connect .connectLinks a {
-  background-color: #7f1d1d; 
+  background-color: #7f1d1d; /* Maroon links to serve as intentional focus buttons */
   color: white;
   border-radius: 4px;
   text-decoration: none;
@@ -137,7 +137,7 @@ section {
 }
 
 #Connect .connectLinks a:hover {
-  background-color: #991b1b; 
+  background-color: #991b1b; /* Brighter welcoming maroon on hover */
 }
 
 #Skills ul {
@@ -164,7 +164,7 @@ form[name="leave_message"] {
   max-width: 500px;
   margin: 20px auto;
   padding: 24px;
-  background-color: #ffffff; 
+  background-color: #ffffff; /* Floats form cleanly off background */
   border: 1px solid #e7e5e4;
   border-radius: 6px;
   font-family: sans-serif;
@@ -194,7 +194,7 @@ form[name="leave_message"] textarea {
   background-color: #fcfbfa;
 }
 
-
+/* Focused style so form input highlights match Maroon theme */
 form[name="leave_message"] input:focus,
 form[name="leave_message"] textarea:focus {
   outline: none;
@@ -206,7 +206,7 @@ form[name="leave_message"] button {
   padding: 15px;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: #7f1d1d; 
+  background-color: #7f1d1d; /* Maroon form CTA button */
   color: white;
   border: none;
   border-radius: 4px;
@@ -235,7 +235,7 @@ form[name="leave_message"] button:hover {
 }
 
 #Projects li {
-  background-color: #ffffff; 
+  background-color: #ffffff; /* Structured white surfaces */
   color: #1c1917;
   padding: 1.5rem;
   border: 1px solid #e7e5e4;
@@ -248,7 +248,8 @@ form[name="leave_message"] button:hover {
 
 #Projects li:hover {
   transform: translateY(-4px);          
-  box-shadow: 0 10px 20px rgba(127, 29, 29, 0.06); 
+  box-shadow: 0 10px 20px rgba(127, 29, 29, 0.06); /* Extremely subtle maroon tinted shadow drop */
+  border-color: #7f1d1d; /* Highlight border on card hover */
   background-color: #ffffff;             
   cursor: pointer;
 }
